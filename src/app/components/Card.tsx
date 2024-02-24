@@ -23,7 +23,7 @@ export function Card({ recipe }: any) {
       }
     };
     fetchContent();
-  }, []);
+  }, [dispatch]);
 
   return (
     <>

@@ -25,10 +25,15 @@ const appSlice = createSlice({
 });
 
 // Load theme from local storage
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme) {
-  initialState.theme = savedTheme;
+if (typeof window !== 'undefined') {
+  // Perform localStorage action
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    initialState.theme = savedTheme;
+  }
 }
+
+
 
 export const { toggleTheme, setLoaded } = appSlice.actions;
 export default appSlice.reducer;

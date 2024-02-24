@@ -21,7 +21,7 @@ const Description = ({ slug }: any) => {
     };
     fetchContent();
    
-  }, [slug]);
+  }, [slug,dispatch]);
   return (
     <div>
       <DescriptionItem
