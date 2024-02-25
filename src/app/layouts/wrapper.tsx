@@ -9,8 +9,8 @@ const Wrapper = ({ children }: any) => {
   return (
     <main
       className={`${
-        state.theme === "light" ? "bg-mainLight" : "bg-primary"
-      } w-full h-full min-h-screen`}
+        state.theme === "light" ? "bg-mainLight" : "bg-[#070613]"
+      } w-full h-full min-h-screen transition`}
     >
       {state.isLoading && <Loader />}
       <div className="">{children}</div>

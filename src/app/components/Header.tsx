@@ -41,9 +41,9 @@ export function Header() {
                 <ContentfulImage
                   src={theme === "light" ? "/light.svg" : "/dark.svg"}
                   alt="Vercel Logo"
-                  className="cursor-pointer w-[30px] h-auto"
-                  width={30}
-                  height={24}
+                  className="cursor-pointer min-w-auto w-[30px] h-auto"
+                  width="0"
+                  height="0"
                   priority
                   title={
                     theme === "light"
