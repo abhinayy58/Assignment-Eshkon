@@ -13,7 +13,7 @@ const Wrapper = ({ children }: any) => {
       } w-full h-full min-h-screen`}
     >
       {state.isLoading && <Loader />}
-      <div className="container">{children}</div>
+      <div className="">{children}</div>
     </main>
   );
 };
