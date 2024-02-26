@@ -10,10 +10,10 @@ const CardItem = ({ slug, title, thumbnail, image }: any) => {
     <div className="w-[380px] block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
       <div className="relative overflow-hidden bg-cover bg-no-repeat">
         <ContentfulImage
-          className="w-full h-[100%]"
+          className="rounded-lg"
           src={"https:" + thumbnail?.file?.url}
-          width={image?.width + 115}
-          height={image?.height}
+          width={400}
+          height={400}
           quality="100"
           alt={title}
           priority
