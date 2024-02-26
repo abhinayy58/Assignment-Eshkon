@@ -11,7 +11,7 @@ import { setLoaded } from "../redux/features/appSlice";
 export function Card({ recipe }: any) {
   const [content, setContent] = useState([]);
   const theme = useSelector((state: RootState) => state?.appReducer?.theme);
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(setLoaded(true));
@@ -24,7 +24,7 @@ export function Card({ recipe }: any) {
     };
     fetchContent();
   }, [dispatch]);
-
+  console.assert(content);
   return (
     <>
       <div className="flex flex-wrap gap-x-10 gap-y-10">
